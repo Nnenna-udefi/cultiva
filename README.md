@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+File Upload & Parsing — Securely upload Excel (via OpenPyxl or SheetJS) or CSV files via drag-and-drop. The backend will parse and prepare the data for analysis.
+Data Preview — Display a tabular preview of the uploaded data to allow users to verify its structure and content before proceeding with analysis.
+Automated Summarization — The backend will process the uploaded data using Pandas to generate key summary statistics and preliminary insights.
+Interactive Data Visualizations — Display relevant charts and visualizations (e.g., histograms, bar charts, box plots) generated from the summary data using Chart.js, Recharts, or Plotly.js.
+Generative R Script Tool
+— Leverage a generative AI tool to interpret the analyzed data (e.g., lab sensitivity results) and suggest an appropriate R design (script) for further, in-depth analysis.
+R Script Display & Download — Present the generated R script in a syntax-highlighted editor, allowing users to review, copy, and download the R code for execution.
+Color
+Layout
+Employ a responsive, dashboard-like layout using Tailwind CSS, featuring distinct panels for data upload, summary visualizations, and R script generation, optimized for clarity and user flow.
+Typography
+Headline and body font: 'Inter' (sans-serif) for its modern, clear, and objective readability across all content. Code font: 'Source Code Pro' (monospace sans-serif) specifically for displaying R script snippets with excellent legibility.
+Iconography
+Use clear, minimalistic line icons that convey actions related to file management, data analysis, and coding, consistent with a clean technical aesthetic.
+Animation
+Incorporate subtle loading animations and transitions to provide feedback during file uploads, data processing, and R script generation, enhancing the user experience.
+AI
+Gemini, Genkit
+Gemini: A powerful AI model capable of understanding and generating various forms of input, including text, code, audio, images, and video. Learn more
+Genkit: An open-source framework from Google that provides a unified API to access AI models and streamlines AI logic, tool use, image generation, and more. Learn more
+UI
+TypeScript, NextJS, Tailwind CSS
+TypeScript: A popular programming language that adds type safety to JavaScript.
+NextJS: A popular web framework built on React with support for client- and server-side rendering.
+Tailwind CSS: A popular CSS framework that lets you style components inline with your HTML and maintain UI consistency across your app.

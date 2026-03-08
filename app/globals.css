@@ -2,14 +2,32 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --softBackground: #f8fafc;
+  --foreground: #020817;
+  --primary: #0f766e;
+  --secondary: #2dd4bf;
+  --accent: #14b8a6;
+  --accent2: #3b82f6;
+  --text: #1f2937;
+  --primary-foreground: #fafafa;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-softBackground: var(--softBackground);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-accent2: var(--accent2);
+  --color-text: var(--text);
+  --color-primary-foreground: var(--primary-foreground);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-inter);
+  --font-space-grotesk: var(--font-space-grotesk);
+  --font-jetBrains-mono: var(--font-jetBrains-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +40,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
 }
