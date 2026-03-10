@@ -1,10 +1,15 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import Header from "./header";
 import { ArrowDown } from "lucide-react";
 import { Button } from "./ui/button";
 import FileUploader from "./file_uploader";
 
 const HomePage = () => {
+  const uploaderRef = useRef<HTMLDivElement>(null);
+  const handleCtaClick = () => {
+    uploaderRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="flex min-h-screen w-full font-inter flex-col">
       <Header />
@@ -21,7 +26,7 @@ const HomePage = () => {
               ready-to-run R script for deeper analysis.
             </p>
           </div>
-          <Button size={"lg"}>
+          <Button size={"lg"} onClick={handleCtaClick}>
             Analyze your data
             <ArrowDown className="ml-2 h-5 w-5" />
           </Button>
@@ -29,7 +34,7 @@ const HomePage = () => {
       </section>
 
       <section
-        // ref={uploaderRef}
+        ref={uploaderRef}
         id="upload-section"
         className="w-full bg-[#020817] py-16 md:py-24 lg:py-32"
       >
