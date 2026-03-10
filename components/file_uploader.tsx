@@ -11,6 +11,7 @@ import {
 import { cn } from "@/lib/utils";
 import { useToast } from "./hooks/use-toast";
 import { parseFile, summarizeData, createSummaryStringForAI } from "@/lib/data";
+import { generateRScriptForAnalysis } from "@/ai/flows/generate_R_script";
 
 interface FileUploaderProps {
   setFile: (file: File | null) => void;
