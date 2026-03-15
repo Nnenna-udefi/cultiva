@@ -10,6 +10,17 @@
   --accent2: #3b82f6;
   --text: #1f2937;
   --primary-foreground: #fafafa;
+  --destructive: #ef4444;
+  --muted-foreground: #64748b;
+  --border: #dadfe7;
+  --input: #dadfe7;
+  --ring: #2d6cb4;
+  --chart-1: #e76e50;
+  --chart-2: #2a9d90;
+  --chart-3: #274754;
+  --chart-4: #e8c468;
+  --chart-5: #f4a462;
+  --radius: 0.5rem;
 }
 
 @theme inline {
@@ -22,6 +33,15 @@
   --color-accent2: var(--accent2);
   --color-text: var(--text);
   --color-primary-foreground: var(--primary-foreground);
+  --color-destructive: var(--destructive);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

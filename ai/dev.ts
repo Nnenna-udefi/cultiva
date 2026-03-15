@@ -1,3 +1,3 @@
 import { config } from "dotenv";
 config();
-import "@/ai/flows/answerMedLabQuestions";
+import "@/ai/flows/generate_R_script";
