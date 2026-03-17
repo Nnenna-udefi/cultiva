@@ -58,7 +58,7 @@ const HomePage = () => {
           <section
             ref={uploaderRef}
             id="upload-section"
-            className="w-full bg-[#020817] py-16 md:py-24 lg:py-32"
+            className="w-full bg-foreground py-16 md:py-24 lg:py-32"
           >
             <div className="mx-auto w-full max-w-7xl px-4 md:px-6 lg:px-8">
               <FileUploader
