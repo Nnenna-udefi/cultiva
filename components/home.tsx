@@ -1,11 +1,14 @@
 "use client";
 import React, { useRef, useState } from "react";
-import Header from "./header";
+// import Header from "./header";
 import { ArrowDown } from "lucide-react";
 import { Button } from "./ui/button";
 import FileUploader from "./file_uploader";
 import DataDashboard from "./data_dashboard";
 import { Column, Data, Summary } from "@/lib/data";
+import Footer from "./footer";
+import logo from "@/components/images/logo.png";
+import Image from "next/image";
 
 const HomePage = () => {
   const [file, setFile] = useState<File | null>(null);
@@ -33,11 +36,14 @@ const HomePage = () => {
   };
   return (
     <div className="flex min-h-screen w-full font-inter flex-col">
-      <Header />
+      {/* <Header /> */}
       {!data ? (
         <>
           <section className="relative w-full border-b bg-softBackground">
             <div className="container mx-auto min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center gap-8 px-4 md:px-6">
+              <div className="max-w-20">
+                <Image src={logo} alt="logo" />
+              </div>
               <div className="space-y-4 max-w-3xl">
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
                   From Raw Data to R-Script, Instantly
@@ -86,6 +92,8 @@ const HomePage = () => {
           />
         </div>
       )}
+
+      <Footer />
     </div>
   );
 };
