@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-black border-t border-[#fafafa] text-white text-center p-8 md:p-12">
+    <div className="bg-softBackground border-t border-[#fafafa] text-white flex justify-center items-center flex-col text-center p-8">
       <ul className="flex flex-col md:flex-row gap-4">
         <li>Terms of Service</li>
         <li>Privacy Policy</li>
