@@ -41,7 +41,7 @@ const HomePage = () => {
         <>
           <section className="relative w-full border-b bg-softBackground">
             <div className="container mx-auto min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center gap-8 px-4 md:px-6">
-              <div className="max-w-50">
+              <div className="w-50 lg:w-70">
                 <Image src={logo} alt="logo" />
               </div>
               <div className="space-y-4 max-w-3xl">
