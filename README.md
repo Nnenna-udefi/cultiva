@@ -1,25 +1,240 @@
-File Upload & Parsing — Securely upload Excel (via OpenPyxl or SheetJS) or CSV files via drag-and-drop. The backend will parse and prepare the data for analysis.
-Data Preview — Display a tabular preview of the uploaded data to allow users to verify its structure and content before proceeding with analysis.
-Automated Summarization — The backend will process the uploaded data using Pandas to generate key summary statistics and preliminary insights.
-Interactive Data Visualizations — Display relevant charts and visualizations (e.g., histograms, bar charts, box plots) generated from the summary data using Chart.js, Recharts, or Plotly.js.
-Generative R Script Tool
-— Leverage a generative AI tool to interpret the analyzed data (e.g., lab sensitivity results) and suggest an appropriate R design (script) for further, in-depth analysis.
-R Script Display & Download — Present the generated R script in a syntax-highlighted editor, allowing users to review, copy, and download the R code for execution.
-Color
-Layout
-Employ a responsive, dashboard-like layout using Tailwind CSS, featuring distinct panels for data upload, summary visualizations, and R script generation, optimized for clarity and user flow.
-Typography
-Headline and body font: 'Inter' (sans-serif) for its modern, clear, and objective readability across all content. Code font: 'Source Code Pro' (monospace sans-serif) specifically for displaying R script snippets with excellent legibility.
-Iconography
-Use clear, minimalistic line icons that convey actions related to file management, data analysis, and coding, consistent with a clean technical aesthetic.
-Animation
-Incorporate subtle loading animations and transitions to provide feedback during file uploads, data processing, and R script generation, enhancing the user experience.
-AI
-Gemini, Genkit
-Gemini: A powerful AI model capable of understanding and generating various forms of input, including text, code, audio, images, and video. Learn more
-Genkit: An open-source framework from Google that provides a unified API to access AI models and streamlines AI logic, tool use, image generation, and more. Learn more
-UI
-TypeScript, NextJS, Tailwind CSS
-TypeScript: A popular programming language that adds type safety to JavaScript.
-NextJS: A popular web framework built on React with support for client- and server-side rendering.
-Tailwind CSS: A popular CSS framework that lets you style components inline with your HTML and maintain UI consistency across your app.
+# Cultiva
+
+Cultiva is an AI-powered data analysis platform that transforms raw spreadsheet data into meaningful insights, visualizations, and statistical workflows.
+
+Upload your Excel or CSV dataset, and Cultiva will:
+
+- analyze your data intelligently,
+- generate key insights,
+- create visualizations,
+- and provide a ready-to-run R script for deeper statistical analysis.
+
+Built for researchers, analysts, students, and data-driven teams who want fast, intelligent analysis without complex setup.
+
+# Features
+
+- Upload Excel and CSV datasets
+- AI-powered dataset analysis using Gemini API
+- Automatic insight generation
+- Data visualization support
+- Smart summaries and trend detection
+- Auto-generated R scripts for advanced analysis
+- Fast and responsive user experience
+- Clean modern UI
+
+# Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Google Gemini API
+
+# ⚙️ Installation
+
+## Clone Repository
+
+```bash
+git clone <https://github.com/Nnenna-udefi/cultiva.git>
+cd cultiva
+```
+
+---
+
+# 📦 Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+# 🔑 Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```env
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+# ▶️ Run Development Server
+
+```bash
+npm run dev
+```
+
+Application runs on:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# 🏗 Production Build
+
+```bash
+npm run build
+```
+
+Start production server:
+
+```bash
+npm start
+```
+
+---
+
+## Supported File Formats
+
+Cultiva currently supports:
+
+```
+csv
+.xlsx
+.xls
+```
+
+## 🤖 How Cultiva Works
+
+1. Upload Dataset
+
+Upload an Excel or CSV file containing your dataset.
+
+2. AI Analysis
+
+Cultiva uses the Gemini API to:
+
+inspect the dataset,
+identify trends,
+detect patterns,
+summarize important findings.
+
+3. Visualization
+
+The platform generates visual insights from the uploaded data.
+
+4. R Script Generation
+
+Cultiva produces a ready-to-run R script for:
+
+- statistical analysis,
+- regression,
+- hypothesis testing,
+- deeper exploratory analysis.
+- 📊 Example Use Cases
+- Research data analysis
+- Laboratory datasets
+- Survey analysis
+- Business intelligence
+- Academic projects
+- Sales reporting
+- Experimental data interpretation
+
+## 🎨 UI & Design
+
+- Design Style
+- Clean dashboard interface
+- Modern AI-inspired layout
+- Responsive across devices
+- Minimal and intuitive user experience
+- Styling
+- Tailwind CSS utility-first styling
+- Responsive layouts
+- Soft shadows and rounded cards
+- 📱 Responsive Design
+
+## Optimized for:
+
+- Mobile devices
+- Tablets
+- Desktop screens
+
+# 🚀 Deployment
+
+- [Cultiva](https://cultiva-one.vercel.app/)
+
+Recommended frontend hosting:
+
+- [Vercel](https://vercel.com?utm_source=chatgpt.com)
+
+---
+
+# 🔧 Deploy on Vercel
+
+## Install Vercel CLI
+
+```bash
+npm install -g vercel
+```
+
+## Deploy
+
+```bash
+vercel
+```
+
+---
+
+# 🔑 Production Environment Variable
+
+Add this in your Vercel project settings:
+
+```env
+GEMINI_API_KEY=your_production_api_key
+```
+
+---
+
+# 📌 Future Improvements
+
+- Multi-file analysis
+- Exportable reports
+- Interactive dashboards
+- AI chat assistant for datasets
+- Python script generation
+- Real-time collaborative analysis
+- More chart customization
+- Cloud dataset storage
+
+---
+
+# 🤝 Contribution
+
+## Fork the repository
+
+```bash
+git fork
+```
+
+## Create feature branch
+
+```bash
+git checkout -b feature-name
+```
+
+## Commit changes
+
+```bash
+git commit -m "Added new feature"
+```
+
+## Push changes
+
+```bash
+git push origin feature-name
+```
+
+## Open Pull Request
+
+---
+
+# 📄 License
+
+MIT License
+
+---
+
+# 👨‍💻 Author
+
+- [Nnenna Udefi](https://github.com/Nnenna-udefi)
